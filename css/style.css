@@ -58,8 +58,42 @@ footer{
   padding: 25px;
   padding-left: 5%;
   padding-right: 5%;
+  text-align: center;
 }
 
 footer p{
   padding-top: 20px;
 }
+
+@media screen and (max-width:640px){
+header{
+  flex: 1;
+  justify-content:center;
+  margin-right: auto;
+  font-size: 75%;
+ }
+div{
+    line-height: 1.5;
+    padding: 8px;
+  }
+}/*END OF MAX WIDTH 640PX */
+/* unfortauntely I couldnt figure out the about page*/
+@media screen and (min-width:641px) and (max-width:720px){
+  header{
+    flex: 1;
+    justify-content:center;
+    margin-right: auto;
+    font-size: 18px;
+  }
+  div{
+    line-height: 1.5;
+    padding: 10px;
+  }
+} /* END OF MAX WIDTH 720PX */
+@media screen and (min-width:1230px) and (max-width:1600px){
+  form{
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+}
+/* this is getting super seeded by the contact css in the contact.html */
