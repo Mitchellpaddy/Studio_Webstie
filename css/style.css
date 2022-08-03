@@ -5,3 +5,61 @@
   font-size:100%;
   font-weight:normal;
 }
+                          /*removed background-color to try and work with index.html image*/
+header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight:700;
+  display:flex;
+  justify-content: space-between;
+  padding:0 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header nav ul{
+  display:flex;
+  justify-content: space-between;
+  list-style-type:none;
+}
+
+header nav a {
+  text-decoration:none;
+  color:white;
+  display:block;
+  padding:25px 20px;
+}
+
+h1 {
+  color: #F3DE0E;
+  padding-top: 25px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+main{
+  padding:15px;
+}
+
+hr{
+  height: 2px;
+  color: grey;
+  background-color: grey;
+}
+
+footer{
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer p{
+  padding-top: 20px;
+}
