@@ -19,12 +19,33 @@
 				line-height: 2.0;
 				padding: 40px;
 			}
-			button{
+			#submit{
 				width: 150px;
 				height: 50px;
 				margin: 40px;
 				background-color: #F3DE0E;
 				border-color: #F3DE0E;
+				color: white;
+				font-weight: 700;
+				text-align: center;
+				padding-left: 0;
+			}
+			input{
+				margin-top: 0.5rem;
+				padding-left: 15px;
+			}
+			input::placeholder{
+				font-weight: bold;
+				opacity: .5;
+				color: black;
+				padding-left: 5px;
+			}
+			form{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-left: 20%;
+				margin-right: 20%;
 			}
 		</style>
 	</head>
@@ -54,12 +75,53 @@
 				<p>Lorem ipsum dolor sit amet consectetur.</p>
 		</section>
 
-				<h3>Your Name</h3>
-				<h3>Your Email</h3>
-				<h3>Your Phone</h3>
-				<h3>Your Message</h3>
+		<form name="contact_form" action="didntmakeoneyetlol.php" method="post">
+			<div style="
+				width: 466px;
+				height: 200px;
+			">
+				<p style="
+						padding: 10px;
+					"
+				><input style= "
+						width: 400px;
+						height: 35px;
+					"
 
-				<button type="button">Send Message</button>
+					type="text" name="Your Name" placeholder="Your Name*"></p>
+				<p style= "
+					padding: 10px;
+				"
+				><input style= "
+						width: 400px;
+						height: 35px;
+					"
+
+					 type="text" name="Your Email" placeholder="Your Email*"></p>
+				<p style="
+					padding: 10px;
+				"
+				><input style= "
+						width: 400px;
+						height: 35px;
+					 /* coulda made a class for the input tags */
+					"
+
+					type="text" name="Your Phone" placeholder="Your Phone*"></p>
+			</div>
+				<p style="
+						width:466px;
+						height: 200px;
+						padding: 10px;
+				"><input style="
+						border-radius: 1%;
+						width: 450px;
+					 height: 175px;
+				"
+				type="text" name="Your Message" placeholder="Your Message*"></p>
+
+				<p><input id="submit" type="submit" name="submit" value="Send Message"></p>
+		 </form>
 		</main>
 
 		<hr style= "
